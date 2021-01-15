@@ -21,31 +21,25 @@ import java.util.Date;
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
-public class Employee {
+public class EmployeePayResponse {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO )
     private Integer id;
 
     @JsonProperty("nombres")
-    @NotNull(message = "El campo nombres no debe ser nulo")
-    @NotEmpty(message = "El campo nombres no debe estar vacio")
     private String nombres;
 
     @JsonProperty("apellidos")
-    @NotNull(message = "El campo apellidos no debe ser nulo")
-    @NotEmpty(message = "El campo apellidos no debe estar vacio")
     private String apellidos;
 
     @JsonProperty("fechaIngreso")
-    @NotNull(message = "El campo fechaIngreso no debe estar vacio")
     private Date fechaIngreso;
 
     @JsonProperty("salarioBase")
-    @NotNull(message = "El campo salarioBase no debe estar vacio")
-    private BigDecimal salarioBase;
+    private Double salarioBase;
 
-    @JsonProperty("fechaRetiro")
-    private Date fechaRetiro;
+    @JsonProperty("valorApaqar")
+    private BigDecimal valorApaqar;
+
 
 }

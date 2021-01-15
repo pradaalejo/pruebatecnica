@@ -5,4 +5,6 @@ import org.springframework.data.repository.CrudRepository;
 
 public interface EmployeeRepository extends CrudRepository<Employee,Integer> {
 
+    void delete(Employee employee);
+
 }

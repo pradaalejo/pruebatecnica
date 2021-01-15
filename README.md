@@ -1,2 +1,0 @@
-# pruebatecnica
-repositorio prueba técnica
